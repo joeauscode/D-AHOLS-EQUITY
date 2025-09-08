@@ -12,7 +12,7 @@ const Homepage = () => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: false,   // re-animate on scroll/reload
+      once: false,  
     });
     AOS.refresh();
   }, []);
@@ -71,7 +71,7 @@ const Homepage = () => {
             </div>
             </div>
 
-            <div style={{display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{display: 'flex', justifyContent: 'space-between' }} className="box">
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#111827', borderRadius: '10PX', color:'whitesmoke', padding: '20px 30px'}}>
                 <span>₦</span>
                 <span>Naira</span>

@@ -89,9 +89,28 @@ transform: scale(1.2);
     width: 100%;
     
 }
+
+
+.menbar{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .rightnave{
+        display: none;
+    }
+
+    .menbar{
+        display: block;
+        font-size: 30px;
+    }
+
+    .main{
+        width: 95%;
+    }
+}
 `
-
-
 
 
 
@@ -178,6 +197,26 @@ display: flex;
 }
 
 
+
+
+@media screen and (max-width: 900px) {
+
+    .main{
+        width: 100%;
+        flex-direction: column-reverse;
+        margin-bottom: 10rem;
+    }
+
+    .chart{
+     margin-top: -3rem;
+      rotate: none;
+      width: 100%;
+    }
+
+   .box> div{
+      padding: 15px 26px !important;
+   }
+}
 `
 
 

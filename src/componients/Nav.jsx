@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import image from '../assets/image/logo.png'
-// import { useNavigate } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { Navbar } from "./styles";
 
@@ -92,8 +92,13 @@ const Nav = () => {
         <div className="left" onClick={ ()=> {GOhome(); loader();}}>
           <img src={image} alt="Logo" />
         </div>
+        
+        <div className="menbar">
+          <FiMenu />
+        </div>
 
-        <div className="middle">
+       <div className="rightnave">
+         <div className="middle">
           {isLoggedIn ? (
            <div>
             <ul>
@@ -123,6 +128,7 @@ const Nav = () => {
             </div>
           )}
         </div>
+       </div>
 
       </div>
  
