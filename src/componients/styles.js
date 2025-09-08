@@ -107,12 +107,17 @@ transform: scale(1.2);
     }
 
     .main{
-        width: 98%;
+        width: 100%;
+        padding: 0px 15px;
     }
 
     .loading{
         width: 100%;
         left: 38%;
+    }
+
+    .left{
+        width: 40%;
     }
 }
 `
