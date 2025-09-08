@@ -257,8 +257,7 @@ display: flex;
     .main{
         width: 100%;
         flex-direction: column-reverse;
-              justify-content: center;
-      align-items: center;
+              
     }
 
     .chart{
@@ -267,11 +266,12 @@ display: flex;
       width: 100%;
       gap: 8px;
       font-size: 20px;
+      justify-content: space-between;
 
     }
 
    .box> div{
-      padding: 15px 26px !important;
+      padding: 15px 15px !important;
    }
 }
 `
