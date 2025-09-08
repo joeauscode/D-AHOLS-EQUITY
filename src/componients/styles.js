@@ -260,6 +260,24 @@ font-family: 'Inter', sans-serif;
     
 }
 
+@media screen and (max-width: 900px) {
+
+    .footter{
+
+        width: 95%;
+        flex-direction: column;
+        gap: 10px;
+    }
+   .EQUITY{
+    font-size: 12px;
+}
+
+.icon>span{
+    font-size: 20px;
+}
+
+}
+
 `
 
 
