@@ -107,7 +107,7 @@ transform: scale(1.2);
     }
 
     .main{
-        width: 95%;
+        width: 98%;
     }
 }
 `
