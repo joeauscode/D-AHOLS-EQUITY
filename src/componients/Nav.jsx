@@ -142,14 +142,14 @@ const Nav = () => {
 
 <div className="rightnave">
             {isLoggedIn ? (
-           <div>
+           <div className="mobilenav">
             <ul>
               <li>Dashboard</li>
               <li>Myaccount</li>
             </ul>
            </div>
           ):(
-         <div>
+         <div className="mobilenaves">
           <Link onClick={ ()=> {GOhome(); loader();}}>Home</Link>
           <Link onClick={() => {portfolio(); loader();}}>Portfolio</Link>
           <Link onClick={() => {Aboutt(); loader();}}>About</Link>
@@ -159,9 +159,9 @@ const Nav = () => {
           
 
                     {isLoggedIn ? (
-            <MdOutlineAccountCircle />
+            <div><MdOutlineAccountCircle /></div>
           ) : (
-            <div>
+            <div className="mobilelogin">
               <div className="a" onClick={reload}>
                 <Link onClick={loader}>Signup</Link>
               </div>

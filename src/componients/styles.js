@@ -103,7 +103,25 @@ transform: scale(1.2);
     
     .rightnave{
         display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px 0px;
+        font-size: 20px;
     }
+    .mobilenaves{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* .mobilelogin{
+        display: flex;
+        flex-direction: column;
+    } */
     .right, .middle{
         display: none;
     }
