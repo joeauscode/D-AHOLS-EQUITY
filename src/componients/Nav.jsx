@@ -4,6 +4,8 @@ import image from '../assets/image/logo.png'
 import { FiMenu } from "react-icons/fi";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { Navbar } from "./styles";
+import { IoCloseSharp } from "react-icons/io5";
+
 
 
 
@@ -57,10 +59,13 @@ const Nav = () => {
   const [menubutton, setMenubutton] = useState(false)
 
   const openmenu = () => {
-    setMenubutton(prev => !prev)
+    setMenubutton(!menubutton)
   }
 
 
+
+
+ 
 
    useEffect(() => {
     const checkAuth = async () => {
@@ -101,7 +106,12 @@ const Nav = () => {
         </div>
         
         <div className="menbar" onClick={openmenu}>
+          {menubutton ? (
+           <IoCloseSharp />
+          ):(
           <FiMenu />
+          )}
+         
         </div>
 
        
