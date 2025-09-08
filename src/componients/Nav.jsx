@@ -54,6 +54,13 @@ const Nav = () => {
   }
 
 
+  const [menubutton, setMenubutton] = useState(false)
+
+  const openmenu = () => {
+    setMenubutton(prev => !prev)
+  }
+
+
 
    useEffect(() => {
     const checkAuth = async () => {
@@ -93,11 +100,11 @@ const Nav = () => {
           <img src={image} alt="Logo" />
         </div>
         
-        <div className="menbar">
+        <div className="menbar" onClick={openmenu}>
           <FiMenu />
         </div>
 
-       <div className="rightnave">
+       
          <div className="middle">
           {isLoggedIn ? (
            <div>
@@ -130,7 +137,40 @@ const Nav = () => {
         </div>
        </div>
 
-      </div>
+{menubutton && (
+
+
+<div className="rightnave">
+            {isLoggedIn ? (
+           <div>
+            <ul>
+              <li>Dashboard</li>
+              <li>Myaccount</li>
+            </ul>
+           </div>
+          ):(
+         <div>
+          <Link onClick={ ()=> {GOhome(); loader();}}>Home</Link>
+          <Link onClick={() => {portfolio(); loader();}}>Portfolio</Link>
+          <Link onClick={() => {Aboutt(); loader();}}>About</Link>
+          <Link onClick={()=>  {reloader();loader();}}>Contact</Link>
+         </div>
+          )}
+          
+
+                    {isLoggedIn ? (
+            <MdOutlineAccountCircle />
+          ) : (
+            <div>
+              <div className="a" onClick={reload}>
+                <Link onClick={loader}>Signup</Link>
+              </div>
+            </div>
+          )}
+  </div>
+  )}
+ 
+
  
    
 
