@@ -711,6 +711,7 @@ img{
     section{
         width: 100%;
         margin-top: -7rem;
+        font-size: 16px;
     }
 
     .images{
