@@ -112,6 +112,7 @@ transform: scale(1.2);
 
     .loading{
         width: 100%;
+        left: 38%;
     }
 }
 `
