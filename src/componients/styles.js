@@ -645,6 +645,25 @@ img {
   animation-iteration-count: infinite;
   width: 100%;
 }
+
+
+@media screen and (max-width: 900px) {
+    
+    main{
+        width: 100%;
+    }
+
+    section{
+        flex-direction: column-reverse;
+        width: 95%;
+    }
+
+    .image{
+        width: 100%;
+        rotate: none;
+        margin-top: -4rem;
+    }
+}
 `
 
 
