@@ -9,15 +9,16 @@ export const Navbar = styled.nav`
 /* background: #f9fafb; */
 
 font-family: 'Poppins', sans-serif;
-background-color: #1A1A1A;
-color: whitesmoke;
+/* background-color: #1A1A1A; */
+background-color: #f9fafb;
+color: #ffd700;
 z-index: 10;
 font-size: 17px;
  position: fixed;
  right: 0;
  top: 0;
  width: 100%;
- padding: 10px 0px;
+ padding: 5px 0px;
 
 
  .loading{
@@ -43,7 +44,7 @@ font-size: 17px;
  a{
     text-decoration: none;
     color: black;
-    color: whitesmoke;
+    color: #245d63;
  }
  a:hover{
 color: wheat;
@@ -164,6 +165,17 @@ position: relative;
 border: 1px solid;
 font-family: 'Inter', sans-serif;
 
+ .blur{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    cursor: pointer;
+}
+
 .main{
     width: 80%;
     margin: auto;
@@ -182,6 +194,12 @@ h1{
     font-weight: 900;
 }
 
+.mybtn{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color:yellow ;
+}
 
 .chart{
 
@@ -239,13 +257,17 @@ display: flex;
     .main{
         width: 100%;
         flex-direction: column-reverse;
-        margin-bottom: 10rem;
+              justify-content: center;
+      align-items: center;
     }
 
     .chart{
      margin-top: -3rem;
       rotate: none;
       width: 100%;
+      gap: 8px;
+      font-size: 20px;
+
     }
 
    .box> div{
@@ -257,7 +279,7 @@ display: flex;
 
 
 export const Footers = styled.footer`
-background: linear-gradient(to top, #1A1A1A, #2E2E2E);
+background: #111827;
 color: #f5f5f5;
 font-family: 'Inter', sans-serif;
 

@@ -1,9 +1,10 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import { Home } from "./styles";
 import { CiWallet } from "react-icons/ci";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaMobileScreen } from "react-icons/fa6";
+
 
 
 
@@ -18,8 +19,39 @@ const Homepage = () => {
   }, []);
 
 
+  const [loginpage, setLoginpage] = useState(false)
+  const [openloader, setOpenloader] = useState(false)
+
+  const gotoregister = () =>{
+    setLoginpage(true)
+    setOpenloader(true)
+    setTimeout(() => {
+      window.location.href = '/login'
+    }, 1000);
+  }
+
+
   return (
     <Home>
+
+
+       {loginpage && (
+        <div className="blur"></div>
+      )}
+
+      {openloader && (
+        <div className="loading" style={{zIndex: '20'}}>
+          <button className="btn btn-primary" type="button" disabled>
+            <span
+              class="spinner-border spinner-border-sm"
+              role="status"
+              aria-hidden="true"
+            ></span>
+            Loading...
+          </button>
+        </div>
+      )}
+
       <div className="main">
 
         <div style={{flex: '1'}} data-aos="slide-right">
@@ -42,8 +74,8 @@ const Homepage = () => {
             </p>
             <div>
               <p>
-                <span>
-                  <button>Register</button>
+                <span onClick={gotoregister}>
+                  <button className="mybtn">Register</button>
                 </span>{" "}
                 with us today and be part of a community built on trust,
                 fairness, and growth — where opportunities are created, values
