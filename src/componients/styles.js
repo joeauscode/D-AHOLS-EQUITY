@@ -272,7 +272,7 @@ display: flex;
     }
 
    .box> div{
-      padding: 15px 15px !important;
+      padding: 15px 20px !important;
    }
 }
 `
@@ -398,13 +398,13 @@ input:hover{
 
 .btn{
     width: 100%;
-    background-color: #1A1A1A;
+    background-color: #245d63;
     color: whitesmoke;
     font-size: 16px;
 }
 
 .btn:hover{
-    background-color: #28a745;
+    background-color: #28a745;;
     transform: scale(1.05);
 }
 
@@ -436,7 +436,7 @@ z-index: 9;
 
 .mylogin{
     cursor: pointer;
-    background-color: #1A1A1A;
+    background-color: #245d63;
     padding: 5px 10px;
     color: whitesmoke;
     border-radius: 10px;
