@@ -109,6 +109,10 @@ transform: scale(1.2);
     .main{
         width: 98%;
     }
+
+    .loading{
+        width: 100%;
+    }
 }
 `
 

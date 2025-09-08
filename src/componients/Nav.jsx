@@ -88,7 +88,7 @@ const Nav = () => {
 
 
 
-            <div className="main">
+          <div className="main">
         <div className="left" onClick={ ()=> {GOhome(); loader();}}>
           <img src={image} alt="Logo" />
         </div>
