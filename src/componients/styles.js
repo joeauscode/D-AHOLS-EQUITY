@@ -43,7 +43,6 @@ font-size: 17px;
 
  a{
     text-decoration: none;
-    color: black;
     color: #245d63;
  }
  a:hover{
@@ -111,6 +110,7 @@ transform: scale(1.2);
         gap: 15px;
         padding: 16px 0px;
         font-size: 20px;
+    
     }
     .mobilenaves{
         display: flex;
@@ -130,6 +130,7 @@ transform: scale(1.2);
     .menbar{
         display: block;
         font-size: 30px;
+        color: #245d63;
     }
 
     .main{
